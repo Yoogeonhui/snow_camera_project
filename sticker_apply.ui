@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>418</width>
+    <height>462</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#ffffff;</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>290</y>
+     <width>231</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #23d160;
+   border-color: transparent;
+   color: #fff;
+   border-radius: 20px;</string>
+   </property>
+   <property name="text">
+    <string>적용</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="eyeCombo">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>60</y>
+     <width>201</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="noseCombo">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>120</y>
+     <width>201</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="mouthCombo">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>180</y>
+     <width>201</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="eyeBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>96</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>눈</string>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="tristate">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="noseBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>96</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>코</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="mouthBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>180</y>
+     <width>96</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>입</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>eyeBox</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_enabled()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>41</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>121</x>
+     <y>101</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>noseBox</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_enabled()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>68</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>140</x>
+     <y>155</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mouthBox</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_enabled()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>45</x>
+     <y>193</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>139</x>
+     <y>247</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>apply_button()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>394</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>307</x>
+     <y>374</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>change_enabled()</slot>
+  <slot>apply_button()</slot>
+ </slots>
+</ui>

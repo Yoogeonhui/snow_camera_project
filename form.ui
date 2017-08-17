@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>919</width>
+    <height>655</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#ffffff;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>10</y>
+      <width>251</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #23d160;
+   border-color: transparent;
+   color: #fff;
+   border-radius: 20px;</string>
+    </property>
+    <property name="text">
+     <string>설정</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>261</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #FFEB04;
+   border-color: transparent;
+   color: #fff;
+   border-radius: 20px;</string>
+    </property>
+    <property name="text">
+     <string>이미지 그리기</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>200</y>
+      <width>311</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #99873D;
+   border-color: transparent;
+   color: #fff;
+   border-radius: 20px;</string>
+    </property>
+    <property name="text">
+     <string>카메라 촬영</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>261</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #FF9B00;
+   border-color: transparent;
+   color: #fff;
+   border-radius: 20px;</string>
+    </property>
+    <property name="text">
+     <string>이미지 가져오기</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>10</y>
+      <width>311</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #CCA914;
+   border-color: transparent;
+   color: #fff;
+   border-radius: 20px;</string>
+    </property>
+    <property name="text">
+     <string>스티커 그리기</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>919</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>draw_image()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>179</x>
+     <y>306</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>564</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>take_camera()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>345</x>
+     <y>363</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>283</x>
+     <y>94</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>configure()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>746</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>622</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>get_image()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>68</x>
+     <y>492</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>285</x>
+     <y>412</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>draw_sticker()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>520</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>617</x>
+     <y>94</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>draw_image()</slot>
+  <slot>take_camera()</slot>
+  <slot>configure()</slot>
+  <slot>get_image()</slot>
+  <slot>draw_sticker()</slot>
+ </slots>
+</ui>
