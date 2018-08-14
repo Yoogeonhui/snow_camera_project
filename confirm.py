@@ -186,7 +186,7 @@ class ConfirmForm(QtWidgets.QDialog):
                 try:
                     req = urllib2.Request("https://westus.api.cognitive.microsoft.com/face/v1.0/detect?returnFaceId=false",
                                           content, {'Content-Type': 'application/octet-stream'})
-                    req.add_header('Ocp-Apim-Subscription-Key', 'b6b816dda0814cbba32c033f7b30fb83')
+                    req.add_header('Ocp-Apim-Subscription-Key', 'YOURKEY')
                     response = urllib2.urlopen(req)
                     gotdata = response.read()
                     dict = json.loads(gotdata)
