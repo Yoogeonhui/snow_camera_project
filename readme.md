@@ -1,23 +1,18 @@
-# 부스 노동 결과 프로젝트
+# 부스 프로젝트 Repository
 
-왜 git으로 옮겼는지 모르겠지만 어쨌든 스노우카메라 비슷한거 따라한거 옮겨놨어요!
+스노우 카메라와 유사하지만, 유저가 직접 스티커나 마스크등을 만들고 설정 가능한 프로그램을 제작하였습니다.
 
-일단 여긴 done sticker 및 save폴더가 없기 때문에 따로 만드셔야 하고 컴파일 된 소스 용량이 만만치 않기 때문에 PyInstaller로 
-알아서 컴파일 하셔야 합니다.
+일단 여긴 done sticker 및 save폴더가 없기 때문에 따로 만드셔야 하고 컴파일 된 소스 용량이 만만치 않기 때문에 exe로 바꾸신다면 pyInstaller로 직접 진행하셔야 합니다.
 
-### 발적화 주의할 것
+### 소스코드 간단한 설명
 소스는
-1. main -> 다른거 부름
+1. main -> 메인 화면
 2. Camera -> 촬영 및 웹캠 캡쳐, 스티커 적용
-3. compile -> Py2exe쓰다 망한거(퇴물)
-4. config -> 설정창
-5. confirm -> 마스크 적용 창
-6. bringImage -> 마스크 가져오는거
-7. definederror -> 사용자 정의 에러
-8. draw_sticker -> 제곧내
-9. drawImage -> 제곧내 * 2
-10. myutility -> pixmap으로 변환하는 함수 밖으로뺀거
-11. sticker_apply -> 스티커 적용 관련 제곧내 *3
-12. 기타 파일들 -> 알아서 알아보세요(..?!)
-
-그러합니다.
+3. config -> 설정창
+4. confirm -> 마스크 적용 창
+5. bringImage -> 마스크 가져오는거
+6. definederror -> 사용자 정의 에러
+7. draw_sticker -> 스티커를 그리는 소스
+8. drawImage -> 이미지 그리기
+9. myutility -> pixmap으로 변환하는 함수 밖으로 뺀거
+10. sticker_apply -> 스티커 적용
